@@ -26,13 +26,12 @@ class Profile extends StatelessWidget {
             width: 20,
           ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               Text(
                 "Yuji Toshihiro",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
               ),
-              Text("Mobile and blockchain developer"),
+              Text("Blockchain Developer"),
             ],
           ),
         ],

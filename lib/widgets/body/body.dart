@@ -12,7 +12,10 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: const [
-          AboutMe(),
+          SizedBox(
+            width: double.infinity,
+            child: AboutMe(),
+          ),
           Experience(),
           Skills(),
           Projects(),
