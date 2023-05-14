@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class Experience extends StatelessWidget {
   const Experience({super.key});
@@ -21,7 +19,7 @@ class Experience extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          height: 15,
+          height: 10,
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,16 +1,55 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class Skills extends StatelessWidget {
   const Skills({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.center,
-      color: Colors.cyan,
-      child: const Text("Skills part"),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: const [
+        SizedBox(
+          height: 60,
+        ),
+        Text(
+          "Skills",
+          style: TextStyle(
+            fontSize: 35,
+            decoration: TextDecoration.underline,
+          ),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Text(
+          "• Flutter",
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        Text(
+          "• React",
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        Text(
+          "• Next.js",
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        Text(
+          "• Hardhat(Solidity)",
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+      ],
     );
   }
 }
