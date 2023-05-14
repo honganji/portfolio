@@ -17,6 +17,7 @@ class IconRow extends StatelessWidget {
             children: [
               Image.asset(
                 "assets/img/github_icon.png",
+                filterQuality: FilterQuality.medium,
                 height: 25,
                 width: 25,
               ),
@@ -25,6 +26,7 @@ class IconRow extends StatelessWidget {
               ),
               Image.asset(
                 "assets/img/linkedin_icon.png",
+                filterQuality: FilterQuality.medium,
                 height: 25,
                 width: 25,
               ),
@@ -33,6 +35,7 @@ class IconRow extends StatelessWidget {
               ),
               Image.asset(
                 "assets/img/twitter_icon.png",
+                filterQuality: FilterQuality.medium,
                 height: 25,
                 width: 25,
               ),

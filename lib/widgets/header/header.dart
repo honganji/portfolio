@@ -16,7 +16,7 @@ class Header extends StatelessWidget {
           child: IconRow(),
         ),
         Flexible(
-          flex: 1,
+          flex: 2,
           fit: FlexFit.loose,
           child: Profile(),
         ),
