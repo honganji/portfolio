@@ -10,16 +10,8 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: const [
-        Flexible(
-          flex: 1,
-          fit: FlexFit.loose,
-          child: IconRow(),
-        ),
-        Flexible(
-          flex: 2,
-          fit: FlexFit.loose,
-          child: Profile(),
-        ),
+        IconRow(),
+        Profile(),
       ],
     );
   }

@@ -35,16 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: const <Widget>[
-            Flexible(
-              flex: 1,
-              fit: FlexFit.loose,
-              child: Header(),
-            ),
-            Flexible(
-              flex: 5,
-              fit: FlexFit.loose,
+            Header(),
+            Expanded(
               child: Body(),
             ),
           ],

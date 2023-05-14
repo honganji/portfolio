@@ -13,10 +13,13 @@ class Profile extends StatelessWidget {
       child: Row(
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(150.0),
+            borderRadius: BorderRadius.circular(100.0),
             child: Image.asset(
               "assets/img/profile.jpg",
               filterQuality: FilterQuality.medium,
+              fit: BoxFit.fill,
+              height: 100,
+              width: 100,
             ),
           ),
           const SizedBox(

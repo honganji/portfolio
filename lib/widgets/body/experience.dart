@@ -8,6 +8,7 @@ class Experience extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 500,
       alignment: Alignment.center,
       color: Colors.amber,
       child: const Text("Experience part"),

@@ -9,29 +9,15 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        Flexible(
-          flex: 1,
-          fit: FlexFit.loose,
-          child: AboutMe(),
-        ),
-        Flexible(
-          flex: 1,
-          fit: FlexFit.loose,
-          child: Experience(),
-        ),
-        Flexible(
-          flex: 1,
-          fit: FlexFit.loose,
-          child: Skills(),
-        ),
-        Flexible(
-          flex: 1,
-          fit: FlexFit.loose,
-          child: Projects(),
-        ),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: const [
+          AboutMe(),
+          Experience(),
+          Skills(),
+          Projects(),
+        ],
+      ),
     );
   }
 }
