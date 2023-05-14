@@ -16,7 +16,10 @@ class Body extends StatelessWidget {
             width: double.infinity,
             child: AboutMe(),
           ),
-          Experience(),
+          SizedBox(
+            width: double.infinity,
+            child: Experience(),
+          ),
           Skills(),
           Projects(),
         ],

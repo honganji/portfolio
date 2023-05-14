@@ -10,6 +10,9 @@ class AboutMe extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
+        SizedBox(
+          height: 60,
+        ),
         Text(
           "About Me",
           style: TextStyle(
