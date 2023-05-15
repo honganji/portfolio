@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Projects extends StatelessWidget {
   const Projects({super.key});
@@ -16,7 +15,7 @@ class Projects extends StatelessWidget {
         const Text(
           "Projects",
           style: TextStyle(
-            fontSize: 35,
+            fontSize: 50,
             decoration: TextDecoration.underline,
           ),
         ),
@@ -30,10 +29,13 @@ class Projects extends StatelessWidget {
             ),
             Row(
               children: [
-                Image.asset(
-                  "assets/img/swap_dapp.png",
-                  height: 300,
-                  width: 100,
+                Container(
+                  margin: const EdgeInsets.only(top: 20),
+                  height: 400,
+                  width: 400,
+                  child: Image.asset(
+                    "assets/img/swap_dapp.png",
+                  ),
                 ),
                 const SizedBox(
                   width: 200,
@@ -86,7 +88,10 @@ on Aurora block chain.
                               color: Colors.black,
                             ),
                           ),
-                          onPressed: () => {},
+                          onPressed: () async {
+                            await launchUrl(Uri.parse(
+                                "https://github.com/unchain-tech/NEAR-MulPay"));
+                          },
                         ),
                       ),
                     ],
@@ -103,10 +108,13 @@ on Aurora block chain.
             ),
             Row(
               children: [
-                Image.asset(
-                  "assets/img/election_dapp.png",
-                  height: 200,
-                  width: 400,
+                Container(
+                  margin: const EdgeInsets.only(top: 60, left: 60, right: 40),
+                  height: 300,
+                  width: 600,
+                  child: Image.asset(
+                    "assets/img/election_dapp.png",
+                  ),
                 ),
                 const SizedBox(
                   width: 50,
@@ -159,7 +167,10 @@ on NEAR block chain.
                               color: Colors.black,
                             ),
                           ),
-                          onPressed: () => {},
+                          onPressed: () async {
+                            await launchUrl(Uri.parse(
+                                "https://github.com/unchain-tech/NEAR-Election-dApp"));
+                          },
                         ),
                       ),
                     ],
@@ -176,10 +187,13 @@ on NEAR block chain.
             ),
             Row(
               children: [
-                Image.asset(
-                  "assets/img/sns_dapp.png",
+                Container(
+                  margin: const EdgeInsets.only(top: 60, left: 60, right: 70),
                   height: 400,
-                  width: 200,
+                  width: 370,
+                  child: Image.asset(
+                    "assets/img/sns_dapp.png",
+                  ),
                 ),
                 const SizedBox(
                   width: 150,
@@ -232,7 +246,10 @@ and message on Astar block chain.
                               color: Colors.black,
                             ),
                           ),
-                          onPressed: () => {},
+                          onPressed: () async {
+                            await launchUrl(Uri.parse(
+                                "https://github.com/unchain-tech/ASTAR-SocialFi"));
+                          },
                         ),
                       ),
                     ],

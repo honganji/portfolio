@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Header(),
             Expanded(
               child: Container(
-                padding: const EdgeInsets.only(left: 100),
+                padding: const EdgeInsets.only(left: 150),
                 child: const Body(),
               ),
             ),

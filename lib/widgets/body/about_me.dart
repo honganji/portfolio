@@ -14,7 +14,7 @@ class AboutMe extends StatelessWidget {
         Text(
           "About Me",
           style: TextStyle(
-            fontSize: 35,
+            fontSize: 50,
             decoration: TextDecoration.underline,
           ),
         ),
@@ -22,7 +22,7 @@ class AboutMe extends StatelessWidget {
           height: 15,
         ),
         Text(
-          r"""Hello, I’m Yuji Toshihiro and I’m a mobile and blockchain developer from Japan.
+          r"""Hello, I’m Yuji Toshihiro and I’m a blockchain developer from Japan.
 
 I started programming 2 years ago. I joined my friends’ team and worked on mobile application development
 with flutter and firebase.
@@ -34,7 +34,7 @@ Now, I’m really interested in mobile application development because I can cre
 practically. Digital Transformation is proceeding fast and such a great technology making my life better. So I want to
 be a part of that work.""",
           style: TextStyle(
-            fontSize: 17,
+            fontSize: 25,
           ),
         ),
       ],

@@ -9,7 +9,7 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      padding: const EdgeInsets.fromLTRB(100, 10, 20, 10),
+      padding: const EdgeInsets.fromLTRB(150, 10, 20, 10),
       child: Row(
         children: [
           ClipRRect(
@@ -18,8 +18,8 @@ class Profile extends StatelessWidget {
               "assets/img/profile.jpg",
               filterQuality: FilterQuality.medium,
               fit: BoxFit.fill,
-              height: 100,
-              width: 100,
+              height: 150,
+              width: 150,
             ),
           ),
           const SizedBox(
@@ -29,9 +29,12 @@ class Profile extends StatelessWidget {
             children: const [
               Text(
                 "Yuji Toshihiro",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 70),
               ),
-              Text("Blockchain Developer"),
+              Text(
+                "Blockchain Developer",
+                style: TextStyle(fontSize: 26),
+              ),
             ],
           ),
         ],

@@ -14,7 +14,7 @@ class Experience extends StatelessWidget {
         const Text(
           "Experience",
           style: TextStyle(
-            fontSize: 35,
+            fontSize: 50,
             decoration: TextDecoration.underline,
           ),
         ),
@@ -25,10 +25,10 @@ class Experience extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: const EdgeInsets.only(top: 5),
+              padding: const EdgeInsets.only(top: 10),
               child: const Text(
                 "2022-PRESENT",
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 30),
               ),
             ),
             const SizedBox(
@@ -40,7 +40,7 @@ class Experience extends StatelessWidget {
                 Text(
                   "Blockchain Engineer",
                   style: TextStyle(
-                    fontSize: 23,
+                    fontSize: 40,
                   ),
                 ),
                 Text(
@@ -49,7 +49,7 @@ Solidity, Javascript, Dart, Rust and make texts how
 to make these applications. Also I maintain these
 application and text.""",
                   style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 25,
                   ),
                 ),
               ],
