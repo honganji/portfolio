@@ -24,7 +24,10 @@ class Body extends StatelessWidget {
             width: double.infinity,
             child: Skills(),
           ),
-          Projects(),
+          SizedBox(
+            width: double.infinity,
+            child: Projects(),
+          ),
         ],
       ),
     );
