@@ -10,7 +10,13 @@ class IconRow extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
       child: Row(
         children: [
-          const Icon(Icons.abc),
+          Image.asset(
+            "assets/img/Y_icon.png",
+            filterQuality: FilterQuality.medium,
+            fit: BoxFit.fill,
+            height: 70,
+            width: 70,
+          ),
           const Spacer(),
           Row(
             children: [
@@ -57,5 +63,25 @@ class IconRow extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class MyPolygon extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    Path path = Path();
+    path.addPolygon([
+      Offset(0, size.height * 1 / 3),
+      Offset(size.width / 2, 0),
+      Offset(size.width, size.height * 1 / 3),
+      Offset(size.width * 4 / 5, size.height),
+      Offset(size.width * 1 / 5, size.height),
+    ], true);
+    return path;
+  }
+
+  @override
+  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
+    return false;
   }
 }
