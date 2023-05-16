@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/parts/sub_title.dart';
 
 class Skills extends StatelessWidget {
   const Skills({super.key});
@@ -11,13 +12,7 @@ class Skills extends StatelessWidget {
         SizedBox(
           height: 60,
         ),
-        Text(
-          "Skills",
-          style: TextStyle(
-            fontSize: 50,
-            decoration: TextDecoration.underline,
-          ),
-        ),
+        SubTitle("Skills"),
         SizedBox(
           height: 15,
         ),

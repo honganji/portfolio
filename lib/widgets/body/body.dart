@@ -3,6 +3,7 @@ import 'package:portfolio/widgets/body/about_me.dart';
 import 'package:portfolio/widgets/body/experience.dart';
 import 'package:portfolio/widgets/body/projects.dart';
 import 'package:portfolio/widgets/body/skills.dart';
+import 'package:portfolio/widgets/header/profile.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -12,6 +13,10 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: const [
+          SizedBox(
+            width: double.infinity,
+            child: Profile(),
+          ),
           SizedBox(
             width: double.infinity,
             child: AboutMe(),

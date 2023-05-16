@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/parts/sub_title.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Projects extends StatelessWidget {
@@ -12,13 +13,7 @@ class Projects extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
-        const Text(
-          "Projects",
-          style: TextStyle(
-            fontSize: 50,
-            decoration: TextDecoration.underline,
-          ),
-        ),
+        const SubTitle("Projects"),
         const SizedBox(
           height: 15,
         ),

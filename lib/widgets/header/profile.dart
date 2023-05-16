@@ -9,7 +9,7 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      padding: const EdgeInsets.fromLTRB(150, 10, 20, 10),
+      padding: const EdgeInsets.fromLTRB(0, 10, 20, 10),
       child: Row(
         children: [
           ClipRRect(
