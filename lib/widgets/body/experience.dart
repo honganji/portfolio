@@ -29,9 +29,9 @@ class Experience extends StatelessWidget {
             const SizedBox(
               width: 30,
             ),
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Blockchain Engineer",
                   style: TextStyle(

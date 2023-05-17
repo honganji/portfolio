@@ -3,6 +3,7 @@ import 'package:portfolio/widgets/body/about_me.dart';
 import 'package:portfolio/widgets/body/experience.dart';
 import 'package:portfolio/widgets/body/projects.dart';
 import 'package:portfolio/widgets/body/skills.dart';
+import 'package:portfolio/widgets/body/bottom.dart';
 import 'package:portfolio/widgets/header/profile.dart';
 
 class Body extends StatelessWidget {
@@ -10,33 +11,25 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScrollConfiguration(
-      behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.only(left: 150, right: 150, bottom: 50),
-        child: Column(
-          children: const [
-            SizedBox(
-              width: double.infinity,
-              child: Profile(),
-            ),
-            SizedBox(
-              width: double.infinity,
-              child: AboutMe(),
-            ),
-            SizedBox(
-              width: double.infinity,
-              child: Experience(),
-            ),
-            SizedBox(
-              width: double.infinity,
-              child: Skills(),
-            ),
-            SizedBox(
-              width: double.infinity,
-              child: Projects(),
-            ),
-          ],
+    return SizedBox(
+      width: double.infinity,
+      child: ScrollConfiguration(
+        behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+        child: const SingleChildScrollView(
+          padding: EdgeInsets.only(left: 150, right: 150, bottom: 30),
+          child: Column(
+            children: [
+              Profile(),
+              SizedBox(
+                width: double.infinity,
+                child: AboutMe(),
+              ),
+              Experience(),
+              Skills(),
+              Projects(),
+              Bottom(),
+            ],
+          ),
         ),
       ),
     );

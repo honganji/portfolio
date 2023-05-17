@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class FrameWork extends StatelessWidget {
   final String _framworkName;
@@ -19,11 +17,11 @@ class FrameWork extends StatelessWidget {
         Text(
           '$_framworkName\n($_languageName)',
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 25,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Image.asset(

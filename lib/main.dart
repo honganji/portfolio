@@ -32,16 +32,18 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: const <Widget>[
-            Header(),
-            Expanded(
-              child: Body(),
-            ),
-          ],
+    return const Scaffold(
+      body: SelectionArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Header(),
+              Expanded(
+                child: Body(),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -7,19 +7,19 @@ class Skills extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(
+        SizedBox(
           height: 40,
         ),
-        const SubTitle("Skills"),
-        const SizedBox(
+        SubTitle("Skills"),
+        SizedBox(
           height: 10,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: const [
+          children: [
             FrameWork(
                 "Flutter", "Dart", "assets/img/flutter_logo.png", 150, 150),
             FrameWork(
