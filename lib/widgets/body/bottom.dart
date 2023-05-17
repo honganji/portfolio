@@ -1,23 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class IconRow extends StatelessWidget {
-  const IconRow({super.key});
+class Bottom extends StatelessWidget {
+  const Bottom({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+    return Padding(
+      padding: const EdgeInsets.only(top: 20, left: 120, right: 120),
       child: Row(
         children: [
-          Image.asset(
-            "assets/img/Y_icon.png",
-            filterQuality: FilterQuality.medium,
-            fit: BoxFit.fill,
-            height: 50,
-            width: 50,
-          ),
-          const Spacer(),
           Row(
             children: [
               IconButton(
@@ -60,28 +52,14 @@ class IconRow extends StatelessWidget {
               ),
             ],
           ),
+          const Spacer(),
+          const SizedBox(
+            width: 300,
+            child: Text(
+                "Designed in Figma and coded in Visual Studio Code. Built with Flutter, deployed with Firebase."),
+          )
         ],
       ),
     );
-  }
-}
-
-class MyPolygon extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    Path path = Path();
-    path.addPolygon([
-      Offset(0, size.height * 1 / 3),
-      Offset(size.width / 2, 0),
-      Offset(size.width, size.height * 1 / 3),
-      Offset(size.width * 4 / 5, size.height),
-      Offset(size.width * 1 / 5, size.height),
-    ], true);
-    return path;
-  }
-
-  @override
-  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-    return false;
   }
 }
