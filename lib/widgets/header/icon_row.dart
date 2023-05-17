@@ -14,8 +14,8 @@ class IconRow extends StatelessWidget {
             "assets/img/Y_icon.png",
             filterQuality: FilterQuality.medium,
             fit: BoxFit.fill,
-            height: 70,
-            width: 70,
+            height: 50,
+            width: 50,
           ),
           const Spacer(),
           Row(
@@ -25,7 +25,7 @@ class IconRow extends StatelessWidget {
                   await launchUrl(Uri.parse(
                       "https://github.com/honganji?tab=repositories"));
                 },
-                iconSize: 40,
+                iconSize: 30,
                 icon: Image.asset(
                   "assets/img/github_icon.png",
                   filterQuality: FilterQuality.medium,
@@ -39,7 +39,7 @@ class IconRow extends StatelessWidget {
                   await launchUrl(Uri.parse(
                       "https://www.linkedin.com/in/yuji-toshihiro-526244269/"));
                 },
-                iconSize: 40,
+                iconSize: 30,
                 icon: Image.asset(
                   "assets/img/linkedin_icon.png",
                   filterQuality: FilterQuality.medium,
@@ -52,7 +52,7 @@ class IconRow extends StatelessWidget {
                 onPressed: () async {
                   await launchUrl(Uri.parse("https://twitter.com/Tonny5693"));
                 },
-                iconSize: 40,
+                iconSize: 30,
                 icon: Image.asset(
                   "assets/img/twitter_icon.png",
                   filterQuality: FilterQuality.medium,

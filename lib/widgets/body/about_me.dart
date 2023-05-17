@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/parts/sub_title.dart';
 
 class AboutMe extends StatelessWidget {
   const AboutMe({super.key});
@@ -9,15 +10,9 @@ class AboutMe extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
         SizedBox(
-          height: 60,
+          height: 20,
         ),
-        Text(
-          "About Me",
-          style: TextStyle(
-            fontSize: 50,
-            decoration: TextDecoration.underline,
-          ),
-        ),
+        SubTitle("About Me"),
         SizedBox(
           height: 15,
         ),
@@ -34,7 +29,7 @@ Now, I’m really interested in mobile application development because I can cre
 practically. Digital Transformation is proceeding fast and such a great technology making my life better. So I want to
 be a part of that work.""",
           style: TextStyle(
-            fontSize: 25,
+            fontSize: 17,
           ),
         ),
       ],
