@@ -13,7 +13,7 @@ class Body extends StatelessWidget {
     return ScrollConfiguration(
       behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
       child: SingleChildScrollView(
-        padding: EdgeInsets.only(left: 150, right: 150),
+        padding: const EdgeInsets.only(left: 150, right: 150, bottom: 50),
         child: Column(
           children: const [
             SizedBox(
