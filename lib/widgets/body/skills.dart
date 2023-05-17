@@ -10,36 +10,12 @@ class Skills extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(
-          height: 60,
+        const SizedBox(
+          height: 40,
         ),
-        SubTitle("Skills"),
-        SizedBox(
-          height: 15,
-        ),
-        Text(
-          "• Flutter",
-          style: TextStyle(
-            fontSize: 20,
-          ),
-        ),
-        Text(
-          "• React",
-          style: TextStyle(
-            fontSize: 20,
-          ),
-        ),
-        Text(
-          "• Next.js",
-          style: TextStyle(
-            fontSize: 20,
-          ),
-        ),
-        Text(
-          "• Hardhat(Solidity)",
-          style: TextStyle(
-            fontSize: 20,
-          ),
+        const SubTitle("Skills"),
+        const SizedBox(
+          height: 10,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
