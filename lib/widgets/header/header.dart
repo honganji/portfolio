@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/header/icon_row.dart';
+import 'package:portfolio/widgets/header/icon.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         IconRow(),
       ],
     );
