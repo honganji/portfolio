@@ -24,12 +24,18 @@ class Projects extends StatelessWidget {
             ),
             Row(
               children: [
-                Container(
-                  margin: const EdgeInsets.only(top: 20),
-                  height: 400,
-                  width: 400,
-                  child: Image.asset(
-                    "assets/img/swap_dapp.png",
+                GestureDetector(
+                  onTap: () async {
+                    await launchUrl(Uri.parse(
+                        "https://github.com/unchain-tech/NEAR-MulPay"));
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 20),
+                    height: 400,
+                    width: 400,
+                    child: Image.asset(
+                      "assets/img/swap_dapp.png",
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -103,12 +109,18 @@ on Aurora block chain.
             ),
             Row(
               children: [
-                Container(
-                  margin: const EdgeInsets.only(top: 60, left: 60, right: 70),
-                  height: 400,
-                  width: 370,
-                  child: Image.asset(
-                    "assets/img/sns_dapp.png",
+                GestureDetector(
+                  onTap: () async {
+                    await launchUrl(Uri.parse(
+                        "https://github.com/unchain-tech/ASTAR-SocialFi"));
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 60, left: 60, right: 70),
+                    height: 400,
+                    width: 370,
+                    child: Image.asset(
+                      "assets/img/sns_dapp.png",
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -182,12 +194,18 @@ and message on Astar block chain.
             ),
             Row(
               children: [
-                Container(
-                  margin: const EdgeInsets.only(top: 60, left: 60, right: 40),
-                  height: 300,
-                  width: 600,
-                  child: Image.asset(
-                    "assets/img/election_dapp.png",
+                GestureDetector(
+                  onTap: () async {
+                    await launchUrl(Uri.parse(
+                        "https://github.com/unchain-tech/NEAR-Election-dApp"));
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 60, left: 60, right: 40),
+                    height: 300,
+                    width: 600,
+                    child: Image.asset(
+                      "assets/img/election_dapp.png",
+                    ),
                   ),
                 ),
                 const SizedBox(
