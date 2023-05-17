@@ -29,7 +29,7 @@ class Profile extends StatelessWidget {
             children: const [
               Text(
                 "Yuji Toshihiro",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 70),
+                style: TextStyle(fontWeight: FontWeight.normal, fontSize: 70),
               ),
               Text(
                 "Blockchain Developer",

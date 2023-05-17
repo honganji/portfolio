@@ -10,7 +10,7 @@ class AboutMe extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
         SizedBox(
-          height: 60,
+          height: 20,
         ),
         SubTitle("About Me"),
         SizedBox(
@@ -29,7 +29,7 @@ Now, I’m really interested in mobile application development because I can cre
 practically. Digital Transformation is proceeding fast and such a great technology making my life better. So I want to
 be a part of that work.""",
           style: TextStyle(
-            fontSize: 25,
+            fontSize: 17,
           ),
         ),
       ],

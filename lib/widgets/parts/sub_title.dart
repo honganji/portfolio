@@ -9,7 +9,7 @@ class SubTitle extends StatelessWidget {
     return Text(
       sub_title,
       style: const TextStyle(
-        fontSize: 50,
+        fontSize: 30,
         decoration: TextDecoration.underline,
       ),
     );

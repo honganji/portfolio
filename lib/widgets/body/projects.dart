@@ -99,85 +99,6 @@ on Aurora block chain.
         Row(
           children: [
             const SizedBox(
-              width: 50,
-            ),
-            Row(
-              children: [
-                Container(
-                  margin: const EdgeInsets.only(top: 60, left: 60, right: 40),
-                  height: 300,
-                  width: 600,
-                  child: Image.asset(
-                    "assets/img/election_dapp.png",
-                  ),
-                ),
-                const SizedBox(
-                  width: 50,
-                ),
-                IntrinsicWidth(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        "Election dApp on NEAR",
-                        style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.w500),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      const Text(
-                        r"""This is a decentralized app that you can vote safely
-on NEAR block chain. 
-                """,
-                        style: TextStyle(
-                          fontSize: 17,
-                        ),
-                      ),
-                      const Divider(
-                        color: Colors.black,
-                        height: 1,
-                        thickness: 2.0,
-                      ),
-                      const SizedBox(
-                        height: 10,
-                        width: 300,
-                      ),
-                      SizedBox(
-                        width: 250,
-                        height: 50,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(25),
-                              ),
-                              side: const BorderSide(
-                                  width: 1, // the thickness
-                                  color: Colors.black // the color of the border
-                                  )),
-                          child: const Text(
-                            "github repository ->",
-                            style: TextStyle(
-                              color: Colors.black,
-                            ),
-                          ),
-                          onPressed: () async {
-                            await launchUrl(Uri.parse(
-                                "https://github.com/unchain-tech/NEAR-Election-dApp"));
-                          },
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
-        Row(
-          children: [
-            const SizedBox(
               width: 150,
             ),
             Row(
@@ -244,6 +165,85 @@ and message on Astar block chain.
                           onPressed: () async {
                             await launchUrl(Uri.parse(
                                 "https://github.com/unchain-tech/ASTAR-SocialFi"));
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            const SizedBox(
+              width: 50,
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(top: 60, left: 60, right: 40),
+                  height: 300,
+                  width: 600,
+                  child: Image.asset(
+                    "assets/img/election_dapp.png",
+                  ),
+                ),
+                const SizedBox(
+                  width: 50,
+                ),
+                IntrinsicWidth(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        "Election dApp on NEAR",
+                        style: TextStyle(
+                            fontSize: 30, fontWeight: FontWeight.w500),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const Text(
+                        r"""This is a decentralized app that you can vote safely
+on NEAR block chain. 
+                """,
+                        style: TextStyle(
+                          fontSize: 17,
+                        ),
+                      ),
+                      const Divider(
+                        color: Colors.black,
+                        height: 1,
+                        thickness: 2.0,
+                      ),
+                      const SizedBox(
+                        height: 10,
+                        width: 300,
+                      ),
+                      SizedBox(
+                        width: 250,
+                        height: 50,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25),
+                              ),
+                              side: const BorderSide(
+                                  width: 1, // the thickness
+                                  color: Colors.black // the color of the border
+                                  )),
+                          child: const Text(
+                            "github repository ->",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                          onPressed: () async {
+                            await launchUrl(Uri.parse(
+                                "https://github.com/unchain-tech/NEAR-Election-dApp"));
                           },
                         ),
                       ),
