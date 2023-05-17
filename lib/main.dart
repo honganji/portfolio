@@ -36,13 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            const Header(),
+          children: const <Widget>[
+            Header(),
             Expanded(
-              child: Container(
-                padding: const EdgeInsets.only(left: 150),
-                child: const Body(),
-              ),
+              child: Body(),
             ),
           ],
         ),

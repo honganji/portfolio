@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/parts/sub_title.dart';
 
 class Experience extends StatelessWidget {
   const Experience({super.key});
@@ -11,13 +12,7 @@ class Experience extends StatelessWidget {
         const SizedBox(
           height: 40,
         ),
-        const Text(
-          "Experience",
-          style: TextStyle(
-            fontSize: 50,
-            decoration: TextDecoration.underline,
-          ),
-        ),
+        const SubTitle("Experience"),
         const SizedBox(
           height: 10,
         ),
@@ -25,10 +20,10 @@ class Experience extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: const EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 4),
               child: const Text(
                 "2022-PRESENT",
-                style: TextStyle(fontSize: 30),
+                style: TextStyle(fontSize: 20),
               ),
             ),
             const SizedBox(
@@ -40,7 +35,7 @@ class Experience extends StatelessWidget {
                 Text(
                   "Blockchain Engineer",
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 25,
                   ),
                 ),
                 Text(
@@ -49,7 +44,7 @@ Solidity, Javascript, Dart, Rust and make texts how
 to make these applications. Also I maintain these
 application and text.""",
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 17,
                   ),
                 ),
               ],
