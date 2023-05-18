@@ -40,15 +40,6 @@ class Profile extends StatelessWidget {
               ),
             ],
           ),
-          const Spacer(),
-          const Row(
-            children: [
-              Text(
-                "Experience",
-                style: TextStyle(fontSize: 30),
-              )
-            ],
-          ),
         ],
       ),
     );
