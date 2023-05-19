@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/db.dart';
 import 'package:portfolio/widgets/body/body.dart';
 import 'package:portfolio/widgets/header/header.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,17 +34,20 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SelectionArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Header(),
-              Expanded(
-                child: Body(),
-              ),
-            ],
+    return ChangeNotifierProvider<PageScrollModel>(
+      create: (BuildContext context) => PageScrollModel(),
+      child: Scaffold(
+        body: SelectionArea(
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                const Header(),
+                Expanded(
+                  child: Body(),
+                ),
+              ],
+            ),
           ),
         ),
       ),
