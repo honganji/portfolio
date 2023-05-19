@@ -22,7 +22,7 @@ Mobile and blockchain developer from Japan.
 
 In 2021 I started working on mobile application development using “Flutter” and “Firebase”.
 
-Later I got also interested in blockchain development and in 2022 I joined “Shiftbase”. I’ve created a couple of web– and mobile application projects from scratch: “Malpay”, “Astar SNS”, “Election DAPP”. 
+Later I got also interested in blockchain development and in 2022 I joined “Shiftbase”. I’ve created a couple of web and mobile application projects from scratch: “Malpay”, “Astar SNS”, “Election dApp”. 
 
 Mobile app development has been my passion since my university enrolment and something I have been working on as a hobby. Outside “Shiftbase” I have also created applications for accounting services and electricity demand. 
 
