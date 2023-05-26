@@ -17,17 +17,16 @@ class AboutMe extends StatelessWidget {
           height: 15,
         ),
         Text(
-          r"""Hello, I’m Yuji Toshihiro and I’m a blockchain developer from Japan.
+          r"""Yuji Toshihiro. 
+Mobile and blockchain developer from Japan.
 
-I started programming 2 years ago. I joined my friends’ team and worked on mobile application development
-with flutter and firebase.
+In 2021 I started working on mobile application development using “Flutter” and “Firebase”.
 
-1 year ago, I met blockchain technology and decided to work for blockchain company. Since then, I’ve been 
-working for shiftbase, inc. as blockchain developer.
+Later I got also interested in blockchain development and in 2022 I joined “shiftbase”. I’ve created a couple of web and mobile application projects from scratch: “Malpay”, “Astar SNS”, “Election dApp”. 
 
-Now, I’m really interested in mobile application development because I can create something that helps people
-practically. Digital Transformation is proceeding fast and such a great technology making my life better. So I want to
-be a part of that work.""",
+Mobile app development has been my passion since my university enrolment and something I have been working on as a hobby. Outside “Shiftbase” I have also created applications for accounting services and electricity demand. 
+
+In my work I use Solidity, Javascript, Dart & Rust. Moreover, I write instructions on how to develop blockchain applications from scratch for other engineers’ use.""",
           style: TextStyle(
             fontSize: 17,
           ),
