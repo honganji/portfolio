@@ -3,8 +3,13 @@ import 'package:portfolio/db.dart';
 import 'package:portfolio/widgets/body/body.dart';
 import 'package:portfolio/widgets/header/header.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
