@@ -9,13 +9,11 @@ import 'package:portfolio/widgets/header/profile.dart';
 import 'package:provider/provider.dart';
 
 class Body extends StatelessWidget {
-  // final ScrollController scrollController = ScrollController();
-  Body({super.key});
+  const Body({super.key});
 
   @override
   Widget build(BuildContext context) {
     ScrollController scrollController = ScrollController();
-    PageScrollModel pageScrollModel = Provider.of<PageScrollModel>(context);
     return SizedBox(
       width: double.infinity,
       child: ScrollConfiguration(

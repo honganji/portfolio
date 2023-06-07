@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/parts/project.dart';
 import 'package:portfolio/widgets/parts/sub_title.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Projects extends StatelessWidget {
   const Projects({super.key});
@@ -19,28 +18,29 @@ class Projects extends StatelessWidget {
           height: 15,
         ),
         Project(
-          "assets/img/swap_dapp.png",
-          "https://github.com/unchain-tech/NEAR-MulPay",
-          "Swap dApp on Aurora",
-          r"""This is a decentralized app that you can swap tokens
-on Aurora block chain. 
-                """,
-          200,
-          400,
-          400,
-          200,
-        ),
-        Project(
-          "assets/img/sns_dapp.png",
-          "https://github.com/unchain-tech/ASTAR-SocialFi",
-          "SNS dApp on Astar",
-          r"""This is a decentralized app that you can post, follow
-and message on Astar block chain.  
+          "assets/img/i-service.png",
+          "https://github.com/honganji/i-service",
+          "i-service",
+          r"""This is a mobile application that you can manage your information easily.
+You can give access rights for institutions like hospital or airport so that
+you don't have to input your information repeatedly.
                 """,
           215,
           400,
           370,
           220,
+        ),
+        Project(
+          "assets/img/swap_dapp.png",
+          "https://github.com/honganji/Aurora-MulPay",
+          "Swap dApp on Aurora",
+          r"""This is a decentralized app that you can swap tokens
+on Aurora block chain.
+                """,
+          200,
+          400,
+          400,
+          200,
         ),
         Project(
           "assets/img/election_dapp.png",
