@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:portfolio/sections/home/desktop_home.dart';
+import 'package:portfolio/sections/about/desktop_about.dart';
+import 'package:portfolio/sections/experience/desktop_experience.dart';
+import 'package:portfolio/sections/projects/desktop_projects.dart';
+import 'package:portfolio/sections/skills/desktop_skills.dart';
 import 'package:portfolio/widgets/title_button.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -7,6 +12,15 @@ class DesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> screensList = const [
+      SafeArea(child: DesktopHome()),
+      SafeArea(child: DesktopAbout()),
+      SafeArea(child: DesktopExperience()),
+      SafeArea(child: DesktopSkills()),
+      SafeArea(child: DesktopProjects()),
+    ];
+    PageController controller = PageController();
+    double _width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -15,7 +29,7 @@ class DesktopLayout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: AnimationConfiguration.toStaggeredList(
             childAnimationBuilder: (widget) => SlideAnimation(
-              child: FadeInAnimation(
+              child: ScaleAnimation(
                 child: widget,
               ),
             ),
@@ -40,15 +54,27 @@ class DesktopLayout extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                width: 500,
+                width: _width * 0.06,
               ),
-              TitleButton(title: "Home"),
-              TitleButton(title: "About"),
-              TitleButton(title: "Experience"),
-              TitleButton(title: "Skills"),
-              TitleButton(title: "Projects")
+              const TitleButton(title: "Home"),
+              const TitleButton(title: "About"),
+              const TitleButton(title: "Experience"),
+              const TitleButton(title: "Skills"),
+              const TitleButton(title: "Projects")
             ],
           ),
+        ),
+      ),
+      body: RawScrollbar(
+        timeToFade: const Duration(milliseconds: 1300),
+        controller: controller,
+        thumbColor: Colors.white70,
+        thickness: 10.0,
+        child: PageView(
+          scrollDirection: Axis.vertical,
+          controller: controller,
+          pageSnapping: false,
+          children: screensList,
         ),
       ),
     );
