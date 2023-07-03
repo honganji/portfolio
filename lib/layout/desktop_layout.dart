@@ -39,15 +39,14 @@ class DesktopLayout extends StatelessWidget {
                   ),
                 ],
               ),
-              const Row(
-                children: [
-                  TitleButton(title: "Home"),
-                  TitleButton(title: "About"),
-                  TitleButton(title: "Experience"),
-                  TitleButton(title: "Skills"),
-                  TitleButton(title: "Projects"),
-                ],
-              )
+              SizedBox(
+                width: 500,
+              ),
+              TitleButton(title: "Home"),
+              TitleButton(title: "About"),
+              TitleButton(title: "Experience"),
+              TitleButton(title: "Skills"),
+              TitleButton(title: "Projects")
             ],
           ),
         ),
