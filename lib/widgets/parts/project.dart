@@ -25,7 +25,7 @@ class Project extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(bottom: 30),
+      padding: const EdgeInsets.only(bottom: 30),
       child: Row(
         children: [
           SizedBox(

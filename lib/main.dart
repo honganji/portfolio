@@ -7,6 +7,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
@@ -41,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<PageScrollModel>(
       create: (BuildContext context) => PageScrollModel(),
-      child: Scaffold(
+      child: const Scaffold(
         body: SelectionArea(
           child: Center(
             child: Column(
