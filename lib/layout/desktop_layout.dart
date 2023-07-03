@@ -69,27 +69,27 @@ class DesktopLayout extends StatelessWidget {
               TitleButton(
                 title: "Home",
                 controller: controller,
-                pageNum: 1,
+                pageNum: 0,
               ),
               TitleButton(
                 title: "About",
                 controller: controller,
-                pageNum: 2,
+                pageNum: 1,
               ),
               TitleButton(
                 title: "Experience",
                 controller: controller,
-                pageNum: 3,
+                pageNum: 2,
               ),
               TitleButton(
                 title: "Skills",
                 controller: controller,
-                pageNum: 4,
+                pageNum: 3,
               ),
               TitleButton(
                 title: "Projects",
                 controller: controller,
-                pageNum: 5,
+                pageNum: 4,
               ),
             ],
           ),

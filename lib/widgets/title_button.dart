@@ -21,7 +21,7 @@ class TitleButton extends StatelessWidget {
       style: ButtonStyle(
           backgroundColor: MaterialStateProperty.resolveWith((states) =>
               states.contains(MaterialState.hovered)
-                  ? const Color.fromARGB(255, 20, 135, 109)
+                  ? const Color.fromARGB(240, 122, 25, 1)
                   : Colors.black),
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
