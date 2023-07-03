@@ -56,11 +56,31 @@ class DesktopLayout extends StatelessWidget {
               SizedBox(
                 width: _width * 0.06,
               ),
-              const TitleButton(title: "Home"),
-              const TitleButton(title: "About"),
-              const TitleButton(title: "Experience"),
-              const TitleButton(title: "Skills"),
-              const TitleButton(title: "Projects")
+              TitleButton(
+                title: "Home",
+                controller: controller,
+                pageNum: 1,
+              ),
+              TitleButton(
+                title: "About",
+                controller: controller,
+                pageNum: 2,
+              ),
+              TitleButton(
+                title: "Experience",
+                controller: controller,
+                pageNum: 3,
+              ),
+              TitleButton(
+                title: "Skills",
+                controller: controller,
+                pageNum: 4,
+              ),
+              TitleButton(
+                title: "Projects",
+                controller: controller,
+                pageNum: 5,
+              ),
             ],
           ),
         ),
