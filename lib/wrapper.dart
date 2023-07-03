@@ -12,11 +12,13 @@ class Wrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      // double _maxWidth = constraints.maxWidth;
-      return isDesktopScreen(context)
-          ? const DesktopLayout()
-          : const MobileLayout();
-    });
+    return SelectionArea(
+      child: LayoutBuilder(builder: (context, constraints) {
+        // double _maxWidth = constraints.maxWidth;
+        return isDesktopScreen(context)
+            ? const DesktopLayout()
+            : const MobileLayout();
+      }),
+    );
   }
 }
