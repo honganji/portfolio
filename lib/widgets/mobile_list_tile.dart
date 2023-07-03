@@ -21,7 +21,7 @@ class MobileListTile extends StatelessWidget {
       ),
       leading: Icon(
         icon,
-        color: Colors.redAccent,
+        color: Color.fromARGB(251, 232, 121, 61),
       ),
       onTap: () {
         controller.animateToPage(

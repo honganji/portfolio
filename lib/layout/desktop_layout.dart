@@ -34,24 +34,34 @@ class DesktopLayout extends StatelessWidget {
               ),
             ),
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    "assets/img/Y_icon.png",
-                    filterQuality: FilterQuality.medium,
-                    fit: BoxFit.fill,
-                    height: 40,
-                    width: 40,
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () {
+                    controller.animateToPage(0,
+                        duration: const Duration(milliseconds: 1200),
+                        curve: Curves.easeInOutSine);
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        "assets/img/Y_icon.png",
+                        filterQuality: FilterQuality.medium,
+                        fit: BoxFit.fill,
+                        height: 40,
+                        width: 40,
+                      ),
+                      const SizedBox(
+                        width: 3,
+                      ),
+                      const Text(
+                        "Yuji Toshihiro",
+                        style: TextStyle(fontSize: 30, fontFamily: "Vollkorn"),
+                      ),
+                    ],
                   ),
-                  const SizedBox(
-                    width: 3,
-                  ),
-                  const Text(
-                    "Yuji Toshihiro",
-                    style: TextStyle(fontSize: 30, fontFamily: "Vollkorn"),
-                  ),
-                ],
+                ),
               ),
               SizedBox(
                 width: _width * 0.06,
@@ -59,27 +69,27 @@ class DesktopLayout extends StatelessWidget {
               TitleButton(
                 title: "Home",
                 controller: controller,
-                pageNum: 1,
+                pageNum: 0,
               ),
               TitleButton(
                 title: "About",
                 controller: controller,
-                pageNum: 2,
+                pageNum: 1,
               ),
               TitleButton(
                 title: "Experience",
                 controller: controller,
-                pageNum: 3,
+                pageNum: 2,
               ),
               TitleButton(
                 title: "Skills",
                 controller: controller,
-                pageNum: 4,
+                pageNum: 3,
               ),
               TitleButton(
                 title: "Projects",
                 controller: controller,
-                pageNum: 5,
+                pageNum: 4,
               ),
             ],
           ),

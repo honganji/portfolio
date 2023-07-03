@@ -60,24 +60,34 @@ class MobileLayout extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         elevation: 0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Image.asset(
-              "assets/img/Y_icon.png",
-              filterQuality: FilterQuality.medium,
-              fit: BoxFit.fill,
-              height: 40,
-              width: 40,
+        title: MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: () {
+              controller.animateToPage(0,
+                  duration: const Duration(milliseconds: 1200),
+                  curve: Curves.easeInOutSine);
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Image.asset(
+                  "assets/img/Y_icon.png",
+                  filterQuality: FilterQuality.medium,
+                  fit: BoxFit.fill,
+                  height: 40,
+                  width: 40,
+                ),
+                const SizedBox(
+                  width: 3,
+                ),
+                const Text(
+                  "Yuji Toshihiro",
+                  style: TextStyle(fontSize: 30, fontFamily: "Vollkorn"),
+                ),
+              ],
             ),
-            const SizedBox(
-              width: 3,
-            ),
-            const Text(
-              "Yuji Toshihiro",
-              style: TextStyle(fontSize: 30, fontFamily: "Vollkorn"),
-            ),
-          ],
+          ),
         ),
       ),
       body: PageView(
