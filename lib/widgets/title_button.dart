@@ -19,14 +19,16 @@ class TitleButton extends StatelessWidget {
             curve: Curves.easeInOutSine);
       },
       style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.resolveWith((states) =>
-              states.contains(MaterialState.hovered)
-                  ? const Color.fromARGB(240, 122, 25, 1)
-                  : Colors.black),
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-              RoundedRectangleBorder(
+        backgroundColor: MaterialStateProperty.resolveWith((states) =>
+            states.contains(MaterialState.hovered)
+                ? const Color.fromARGB(252, 141, 50, 1)
+                : Colors.black),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(18.0),
-          ))),
+          ),
+        ),
+      ),
       child: Text(
         title,
         style: const TextStyle(fontSize: 20),
