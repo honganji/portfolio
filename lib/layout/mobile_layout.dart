@@ -37,7 +37,7 @@ class MobileLayout extends StatelessWidget {
               pageNum: 2,
             ),
             MobileListTile(
-              title: "Experience",
+              title: "Experience & Skills",
               controller: controller,
               icon: Icons.work,
               pageNum: 3,
