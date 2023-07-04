@@ -28,8 +28,9 @@ class DesktopLayout extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: AnimationConfiguration.toStaggeredList(
+            duration: const Duration(milliseconds: 1500),
             childAnimationBuilder: (widget) => SlideAnimation(
-              child: ScaleAnimation(
+              child: FlipAnimation(
                 child: widget,
               ),
             ),
@@ -96,10 +97,8 @@ class DesktopLayout extends StatelessWidget {
         ),
       ),
       body: RawScrollbar(
-        timeToFade: const Duration(milliseconds: 1300),
         controller: controller,
-        thumbColor: Colors.white70,
-        thickness: 10.0,
+        thickness: 0,
         child: PageView(
           scrollDirection: Axis.vertical,
           controller: controller,

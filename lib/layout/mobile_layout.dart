@@ -75,15 +75,15 @@ class MobileLayout extends StatelessWidget {
                   "assets/img/Y_icon.png",
                   filterQuality: FilterQuality.medium,
                   fit: BoxFit.fill,
-                  height: 40,
-                  width: 40,
+                  height: 30,
+                  width: 30,
                 ),
                 const SizedBox(
                   width: 3,
                 ),
                 const Text(
                   "Yuji Toshihiro",
-                  style: TextStyle(fontSize: 30, fontFamily: "Vollkorn"),
+                  style: TextStyle(fontSize: 20, fontFamily: "Vollkorn"),
                 ),
               ],
             ),
