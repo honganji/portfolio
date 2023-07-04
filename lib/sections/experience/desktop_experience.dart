@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:portfolio/widgets/skill_box.dart';
+import '../../constants/skills_list.dart' as Constants;
 
 class DesktopExperience extends StatelessWidget {
   const DesktopExperience({super.key});
@@ -7,7 +9,6 @@ class DesktopExperience extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.black,
       body: Row(
@@ -15,7 +16,7 @@ class DesktopExperience extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
-            width: width * 0.02,
+            width: width * 0.13,
           ),
           Expanded(
             child: Center(
@@ -31,22 +32,7 @@ class DesktopExperience extends StatelessWidget {
                         child: ScaleAnimation(
                           duration: Duration(milliseconds: 1000),
                           child: FadeInAnimation(
-                            child: Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Container(
-                                height: height * 0.25,
-                                width: width * 0.25,
-                                color: Colors.deepOrange,
-                                child: Center(
-                                  child: Text(
-                                    "Animated",
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.w800,
-                                        color: Colors.white),
-                                  ),
-                                ),
-                              ),
-                            ),
+                            child: SkillBox2(Constants.skillList[index]),
                           ),
                         ));
                   }),
@@ -54,8 +40,9 @@ class DesktopExperience extends StatelessWidget {
               ),
             ),
           ),
+          // Spacer(),
           SizedBox(
-            width: width * 0.02,
+            width: width * 0.13,
           ),
           Center(
             child: Image.asset(
@@ -63,8 +50,9 @@ class DesktopExperience extends StatelessWidget {
               width: width * 0.25,
             ),
           ),
+          // Spacer(),
           SizedBox(
-            width: width * 0.02,
+            width: width * 0.13,
           ),
         ],
       ),
