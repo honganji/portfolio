@@ -13,11 +13,11 @@ class DesktopAbout extends StatelessWidget {
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: AnimationConfiguration.toStaggeredList(
-          duration: Duration(milliseconds: 1200),
+          duration: const Duration(milliseconds: 1200),
           childAnimationBuilder: (widget) => SlideAnimation(child: widget),
           children: [
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: width * 0.45,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

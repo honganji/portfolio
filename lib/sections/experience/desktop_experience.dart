@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:portfolio/widgets/body/experience.dart';
 import 'package:portfolio/widgets/skill_box.dart';
-import '../../constants/skills_list.dart' as Constants;
+import '../../constants/skills_list.dart' as constants;
 
 class DesktopExperience extends StatelessWidget {
   const DesktopExperience({super.key});
@@ -18,7 +17,7 @@ class DesktopExperience extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "Experience",
               style: TextStyle(
                 color: Colors.white,
@@ -31,14 +30,14 @@ class DesktopExperience extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Container(
+                    SizedBox(
                       width: width * 0.12,
-                      child: Text(
+                      child: const Text(
                         "2022 - PRESENT",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ),
-                    Text(
+                    const Text(
                       "BlockChain Engineer",
                       style: TextStyle(color: Colors.white, fontSize: 27),
                     ),
@@ -101,10 +100,11 @@ class DesktopExperience extends StatelessWidget {
                                   position: index,
                                   columnCount: 2,
                                   child: ScaleAnimation(
-                                    duration: Duration(milliseconds: 1000),
+                                    duration:
+                                        const Duration(milliseconds: 1000),
                                     child: FadeInAnimation(
                                       child:
-                                          SkillBox(Constants.skillList[index]),
+                                          SkillBox(constants.skillList[index]),
                                     ),
                                   ));
                             }),

@@ -21,7 +21,7 @@ class MobileAbout extends StatelessWidget {
           ),
           children: [
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: width * 0.9,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
