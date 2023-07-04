@@ -22,24 +22,24 @@ class MobileHome extends StatelessWidget {
                 children: [
                   const Text(
                     "Thanks for visiting my website!",
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  const Text(
-                    "Yuji Toshihiro",
-                    style: TextStyle(color: Colors.white, fontSize: 30),
+                    style: TextStyle(color: Colors.white, fontSize: 15),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
-                  Text(
-                    "Flutter Dev",
-                    style: TextStyle(color: Colors.yellow[400], fontSize: 22),
+                  const Text(
+                    "Yuji Toshihiro",
+                    style: TextStyle(color: Colors.white, fontSize: 23),
                   ),
                   const SizedBox(
-                    height: 20,
+                    height: 5,
+                  ),
+                  Text(
+                    "Flutter Dev",
+                    style: TextStyle(color: Colors.yellow[400], fontSize: 20),
+                  ),
+                  const SizedBox(
+                    height: 10,
                   ),
                   Row(
                     children: [
@@ -48,7 +48,7 @@ class MobileHome extends StatelessWidget {
                           await launchUrl(Uri.parse(
                               "https://github.com/honganji?tab=repositories"));
                         },
-                        iconSize: 35,
+                        iconSize: 25,
                         icon: Image.asset(
                           "assets/img/github_icon.png",
                           color: Colors.white,
@@ -61,7 +61,7 @@ class MobileHome extends StatelessWidget {
                                 "https://www.linkedin.com/in/yuji-toshihiro-526244269/"),
                           );
                         },
-                        iconSize: 35,
+                        iconSize: 25,
                         icon: Image.asset(
                           "assets/img/linkedin_icon.png",
                           color: Colors.white,
@@ -73,7 +73,7 @@ class MobileHome extends StatelessWidget {
                             Uri.parse("https://twitter.com/Tonny5693"),
                           );
                         },
-                        iconSize: 35,
+                        iconSize: 25,
                         icon: Image.asset(
                           "assets/img/twitter_icon.png",
                           color: Colors.white,
