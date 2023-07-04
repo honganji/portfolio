@@ -94,18 +94,6 @@ class MobileHome extends StatelessWidget {
                 ],
               ),
             ),
-            // Expanded(
-            //   child: Center(
-            //     child: Container(
-            //       decoration: BoxDecoration(color: Colors.black),
-            //       child: Image.asset(
-            //         "assets/img/mobile.png",
-            //         height: 300,
-            //         width: 300,
-            //       ),
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),

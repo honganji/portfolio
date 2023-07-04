@@ -13,7 +13,7 @@ class MobileAbout extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: AnimationConfiguration.toStaggeredList(
-          duration: Duration(milliseconds: 630),
+          duration: const Duration(milliseconds: 630),
           childAnimationBuilder: (widget) => SlideAnimation(
             child: FadeInAnimation(
               child: widget,
@@ -21,7 +21,7 @@ class MobileAbout extends StatelessWidget {
           ),
           children: [
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: width * 0.9,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -32,6 +32,7 @@ class MobileAbout extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 17,
+                        decoration: TextDecoration.underline,
                       ),
                     ),
                     SizedBox(
