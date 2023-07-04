@@ -4,7 +4,6 @@ import 'package:portfolio/sections/home/desktop_home.dart';
 import 'package:portfolio/sections/about/desktop_about.dart';
 import 'package:portfolio/sections/experience/desktop_experience.dart';
 import 'package:portfolio/sections/projects/desktop_projects.dart';
-import 'package:portfolio/sections/skills/desktop_skills.dart';
 import 'package:portfolio/widgets/title_button.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -16,7 +15,6 @@ class DesktopLayout extends StatelessWidget {
       SafeArea(child: DesktopHome()),
       SafeArea(child: DesktopAbout()),
       SafeArea(child: DesktopExperience()),
-      SafeArea(child: DesktopSkills()),
       SafeArea(child: DesktopProjects()),
     ];
     PageController controller = PageController();
@@ -83,14 +81,9 @@ class DesktopLayout extends StatelessWidget {
                 pageNum: 2,
               ),
               TitleButton(
-                title: "Skills",
-                controller: controller,
-                pageNum: 3,
-              ),
-              TitleButton(
                 title: "Projects",
                 controller: controller,
-                pageNum: 4,
+                pageNum: 3,
               ),
             ],
           ),

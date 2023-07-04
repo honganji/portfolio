@@ -3,7 +3,6 @@ import 'package:portfolio/sections/about/mobile_about.dart';
 import 'package:portfolio/sections/experience/mobile_experience.dart';
 import 'package:portfolio/sections/home/mobile_home.dart';
 import 'package:portfolio/sections/projects/mobile_projects.dart';
-import 'package:portfolio/sections/skills/mobile_skills.dart';
 import 'package:portfolio/widgets/mobile_list_tile.dart';
 
 class MobileLayout extends StatelessWidget {
@@ -15,7 +14,6 @@ class MobileLayout extends StatelessWidget {
       const SafeArea(child: MobileHome()),
       const SafeArea(child: MobileAbout()),
       const SafeArea(child: MobileExperience()),
-      const SafeArea(child: MobileSkills()),
       const SafeArea(child: MobileProjects()),
     ];
     PageController controller = PageController();

@@ -1,55 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/model/skill_model.dart';
 
-class SkillBox extends StatelessWidget {
+class SkillBox extends StatefulWidget {
   const SkillBox(this.skill, {super.key});
   final SkillModel skill;
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(20.0),
-      decoration: BoxDecoration(
-        color: Colors.grey,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Column(
-        children: [
-          Text(
-            '${skill.framworkName}\n(${skill.languageName})',
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 25,
-            ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Image.asset(
-            skill.imagePath,
-            filterQuality: FilterQuality.medium,
-            fit: BoxFit.fill,
-            height: 150,
-            width: 150,
-          ),
-        ],
-      ),
-    );
-  }
+  State<SkillBox> createState() => _SkillBoxState();
 }
 
-class SkillBox2 extends StatefulWidget {
-  const SkillBox2(this.skill, {super.key});
-  final SkillModel skill;
-
-  @override
-  State<SkillBox2> createState() => _SkillBox2State();
-}
-
-class _SkillBox2State extends State<SkillBox2> {
+class _SkillBoxState extends State<SkillBox> {
   bool isHover = false;
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       opaque: false,
@@ -78,23 +43,25 @@ class _SkillBox2State extends State<SkillBox2> {
         ),
         child: Column(
           children: [
+            SizedBox(
+              height: width * 0.007,
+            ),
             Text(
               '${widget.skill.framworkName}\n(${widget.skill.languageName})',
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 25,
+                fontSize: 20,
               ),
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            const Spacer(),
             Image.asset(
               widget.skill.imagePath,
               filterQuality: FilterQuality.medium,
               fit: BoxFit.fill,
-              height: 150,
-              width: 150,
+              width: width * 0.05,
+              // height: height * 0.1,
             ),
+            const Spacer(),
           ],
         ),
       ),
