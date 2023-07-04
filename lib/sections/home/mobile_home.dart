@@ -86,8 +86,8 @@ class MobileHome extends StatelessWidget {
                       decoration: BoxDecoration(color: Colors.black),
                       child: Image.asset(
                         "assets/img/mobile.png",
-                        height: 250,
-                        width: 250,
+                        height: 200,
+                        width: 200,
                       ),
                     ),
                   ),
