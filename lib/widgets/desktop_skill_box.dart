@@ -14,7 +14,6 @@ class _DesktopSkillBoxState extends State<DesktopSkillBox> {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       opaque: false,
@@ -35,8 +34,10 @@ class _DesktopSkillBoxState extends State<DesktopSkillBox> {
           color: const Color.fromARGB(255, 50, 50, 50),
           boxShadow: [
             BoxShadow(
-              color: isHover ? Color.fromARGB(255, 125, 61, 0) : Colors.black,
-              offset: isHover ? Offset(3.0, 3.0) : Offset(0, 0),
+              color: isHover
+                  ? const Color.fromARGB(255, 125, 61, 0)
+                  : Colors.black,
+              offset: isHover ? const Offset(3.0, 3.0) : const Offset(0, 0),
               blurRadius: 4.0,
             ),
           ],

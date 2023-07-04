@@ -37,9 +37,9 @@ class DesktopExperience extends StatelessWidget {
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ),
-                    const Text(
+                    Text(
                       "BlockChain Engineer",
-                      style: TextStyle(color: Colors.white, fontSize: 27),
+                      style: TextStyle(color: Colors.amber[400], fontSize: 27),
                     ),
                   ],
                 ),
