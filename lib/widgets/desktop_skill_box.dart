@@ -31,7 +31,7 @@ class _DesktopSkillBoxState extends State<DesktopSkillBox> {
         margin: const EdgeInsets.all(20.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: const Color.fromARGB(255, 50, 50, 50),
+          color: const Color.fromARGB(255, 208, 208, 208),
           boxShadow: [
             BoxShadow(
               color: isHover

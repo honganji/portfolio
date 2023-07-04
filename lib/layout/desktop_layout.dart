@@ -15,7 +15,7 @@ class DesktopLayout extends StatelessWidget {
       SafeArea(child: DesktopHome()),
       SafeArea(child: DesktopAbout()),
       SafeArea(child: DesktopExperience()),
-      SafeArea(child: DesktopProjects()),
+      DesktopProjects(),
     ];
     PageController controller = PageController();
     double _width = MediaQuery.of(context).size.width;
