@@ -36,7 +36,7 @@ class DesktopHome extends StatelessWidget {
                   ),
                   Text(
                     "Flutter Dev",
-                    style: TextStyle(color: Colors.yellow[400], fontSize: 28),
+                    style: TextStyle(color: Colors.amber[400], fontSize: 28),
                   ),
                   const SizedBox(
                     height: 20,
@@ -87,7 +87,7 @@ class DesktopHome extends StatelessWidget {
             Expanded(
               child: Center(
                 child: Container(
-                  decoration: BoxDecoration(color: Colors.black),
+                  decoration: const BoxDecoration(color: Colors.black),
                   child: Image.asset(
                     "assets/img/mobile.png",
                     height: 300,
