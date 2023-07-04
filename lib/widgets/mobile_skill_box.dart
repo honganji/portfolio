@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/model/skill_model.dart';
 
-class SkillBox extends StatefulWidget {
-  const SkillBox(this.skill, {super.key});
+class MobileSkillBox extends StatefulWidget {
+  const MobileSkillBox(this.skill, {super.key});
   final SkillModel skill;
 
   @override
-  State<SkillBox> createState() => _SkillBoxState();
+  State<MobileSkillBox> createState() => _DesktopSkillBoxState();
 }
 
-class _SkillBoxState extends State<SkillBox> {
+class _DesktopSkillBoxState extends State<MobileSkillBox> {
   bool isHover = false;
   @override
   Widget build(BuildContext context) {
@@ -29,14 +29,14 @@ class _SkillBoxState extends State<SkillBox> {
         });
       },
       child: Container(
-        margin: const EdgeInsets.all(20.0),
+        margin: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: const Color.fromARGB(255, 50, 50, 50),
           boxShadow: [
             BoxShadow(
               color: isHover ? Color.fromARGB(255, 125, 61, 0) : Colors.black,
-              offset: isHover ? Offset(3.0, 3.0) : Offset(0, 0),
+              offset: isHover ? Offset(2.0, 2.0) : Offset(0, 0),
               blurRadius: 4.0,
             ),
           ],
@@ -50,7 +50,7 @@ class _SkillBoxState extends State<SkillBox> {
               '${widget.skill.framworkName}\n(${widget.skill.languageName})',
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 20,
+                fontSize: 13,
               ),
             ),
             const Spacer(),
@@ -58,7 +58,7 @@ class _SkillBoxState extends State<SkillBox> {
               widget.skill.imagePath,
               filterQuality: FilterQuality.medium,
               fit: BoxFit.fill,
-              width: width * 0.05,
+              width: width * 0.07,
               // height: height * 0.1,
             ),
             const Spacer(),

@@ -32,6 +32,7 @@ class MobileAbout extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 17,
+                        decoration: TextDecoration.underline,
                       ),
                     ),
                     SizedBox(

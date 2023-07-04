@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:portfolio/widgets/skill_box.dart';
+import 'package:portfolio/widgets/desktop_skill_box.dart';
 import '../../constants/skills_list.dart' as constants;
 
 class DesktopExperience extends StatelessWidget {
@@ -103,8 +103,9 @@ class DesktopExperience extends StatelessWidget {
                                     duration:
                                         const Duration(milliseconds: 1000),
                                     child: FadeInAnimation(
-                                      child:
-                                          SkillBox(constants.skillList[index]),
+                                      child: DesktopSkillBox(
+                                        constants.skillList[index],
+                                      ),
                                     ),
                                   ));
                             }),
