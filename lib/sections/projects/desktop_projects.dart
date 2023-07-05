@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:portfolio/constants/projects_list.dart' as constants;
 import 'package:portfolio/widgets/desktop_mobile_app_box.dart';
 import 'package:portfolio/widgets/desktop_web_app_box.dart';
@@ -19,12 +18,15 @@ class DesktopProjects extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              "Project",
-              style: TextStyle(
-                color: Colors.white,
-                decoration: TextDecoration.underline,
-                fontSize: 30,
+            Padding(
+              padding: EdgeInsets.only(bottom: height * 0.05),
+              child: const Text(
+                "Projects",
+                style: TextStyle(
+                  color: Colors.white,
+                  decoration: TextDecoration.underline,
+                  fontSize: 30,
+                ),
               ),
             ),
             Expanded(
@@ -33,7 +35,8 @@ class DesktopProjects extends StatelessWidget {
                   physics: const ScrollPhysics(),
                   primary: false,
                   crossAxisCount: 2,
-                  crossAxisSpacing: 10,
+                  crossAxisSpacing: width * 0.03,
+                  mainAxisSpacing: height * 0.05,
                   children: List.generate(4, (index) {
                     final project = constants.projectList[index];
                     return (index < 2)

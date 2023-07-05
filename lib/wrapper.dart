@@ -14,7 +14,6 @@ class Wrapper extends StatelessWidget {
   Widget build(BuildContext context) {
     return SelectionArea(
       child: LayoutBuilder(builder: (context, constraints) {
-        // double _maxWidth = constraints.maxWidth;
         return isDesktopScreen(context)
             ? const DesktopLayout()
             : const MobileLayout();

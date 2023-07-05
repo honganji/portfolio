@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/db.dart';
-import 'package:portfolio/widgets/body/body.dart';
-import 'package:portfolio/widgets/header/header.dart';
 import 'package:portfolio/wrapper.dart';
-import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
@@ -21,42 +17,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Yuji Toshihiro',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: const Wrapper());
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return ChangeNotifierProvider<PageScrollModel>(
-      create: (BuildContext context) => PageScrollModel(),
-      child: const Scaffold(
-        body: SelectionArea(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                const Header(),
-                Expanded(
-                  child: Body(),
-                ),
-              ],
-            ),
-          ),
-        ),
+      title: 'Yuji Toshihiro',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: const Wrapper(),
     );
   }
 }

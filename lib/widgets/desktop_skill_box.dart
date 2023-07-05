@@ -60,7 +60,6 @@ class _DesktopSkillBoxState extends State<DesktopSkillBox> {
               filterQuality: FilterQuality.medium,
               fit: BoxFit.fill,
               width: width * 0.05,
-              // height: height * 0.1,
             ),
             const Spacer(),
           ],

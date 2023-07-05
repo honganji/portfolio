@@ -22,7 +22,7 @@ class MobileExperience extends StatelessWidget {
               "Experience",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 17,
+                fontSize: 25,
                 decoration: TextDecoration.underline,
               ),
             ),
@@ -32,18 +32,18 @@ class MobileExperience extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     SizedBox(
-                      width: width * 0.2,
+                      width: width * 0.3,
                       child: const Text(
                         "2022 - PRESENT",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 10,
+                          fontSize: 13,
                         ),
                       ),
                     ),
                     const Text(
                       "BlockChain Engineer",
-                      style: TextStyle(color: Colors.white, fontSize: 13),
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                   ],
                 ),
@@ -51,20 +51,25 @@ class MobileExperience extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     SizedBox(
-                      width: width * 0.2,
+                      width: width * 0.3,
                     ),
                     SizedBox(
-                      width: width * 0.6,
+                      width: width * 0.5,
                       child: const Text(
                         "I develop applications with smart contract using Solidity, Javascript, Dart, Rust and make texts how to make these applications. Also I maintain these application and text.",
-                        style: TextStyle(color: Colors.white, fontSize: 10),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 13,
+                        ),
                       ),
                     ),
                   ],
                 ),
               ],
             ),
-            const Spacer(),
+            SizedBox(
+              height: height * 0.06,
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -75,7 +80,7 @@ class MobileExperience extends StatelessWidget {
                   "Skills",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 17,
+                    fontSize: 25,
                     decoration: TextDecoration.underline,
                   ),
                 ),
@@ -86,15 +91,6 @@ class MobileExperience extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Center(
-                      child: Image.asset(
-                        "assets/img/project.png",
-                        width: width * 0.25,
-                      ),
-                    ),
-                    SizedBox(
-                      width: width * 0.02,
-                    ),
                     Expanded(
                       child: Center(
                         child: AnimationLimiter(
