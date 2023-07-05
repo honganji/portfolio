@@ -28,7 +28,7 @@ class _DesktopSkillBoxState extends State<MobileSkillBox> {
             '${widget.skill.framworkName}\n(${widget.skill.languageName})',
             textAlign: TextAlign.center,
             style: const TextStyle(
-              fontSize: 13,
+              fontSize: 16,
             ),
           ),
           const Spacer(),
@@ -36,8 +36,7 @@ class _DesktopSkillBoxState extends State<MobileSkillBox> {
             widget.skill.imagePath,
             filterQuality: FilterQuality.medium,
             fit: BoxFit.fill,
-            width: width * 0.07,
-            // height: height * 0.1,
+            width: width * 0.2,
           ),
           const Spacer(),
         ],
