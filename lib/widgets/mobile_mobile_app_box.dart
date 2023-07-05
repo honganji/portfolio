@@ -69,30 +69,35 @@ class _DesktopMobileAppBoxState extends State<MobileMobileAppBox> {
                     horizontal: width * 0.02,
                   ),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text(
-                        '${widget.project.projectName}',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      SizedBox(height: height * 0.008),
-                      Text(widget.project.description),
-                      SizedBox(height: height * 0.008),
-                      const Divider(
-                        color: Colors.black,
-                        height: 1,
-                        thickness: 2.0,
-                      ),
-                      SizedBox(
-                        height: height * 0.01,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            widget.project.projectName,
+                            style: const TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(height: height * 0.008),
+                          Text(widget.project.description),
+                          SizedBox(height: height * 0.008),
+                          const Divider(
+                            color: Colors.black,
+                            height: 1,
+                            thickness: 2.0,
+                          ),
+                          SizedBox(
+                            height: height * 0.01,
+                          ),
+                        ],
                       ),
                       SizedBox(
                         width: width * 0.3,
-                        height: height * 0.1,
+                        height: height * 0.06,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,

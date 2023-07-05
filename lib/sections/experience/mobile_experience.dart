@@ -17,6 +17,7 @@ class MobileExperience extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const Spacer(),
             const Text(
               "Experience",
               style: TextStyle(
@@ -63,6 +64,7 @@ class MobileExperience extends StatelessWidget {
                 ),
               ],
             ),
+            const Spacer(),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -122,6 +124,7 @@ class MobileExperience extends StatelessWidget {
                 ),
               ],
             ),
+            const Spacer(),
           ],
         ),
       ),
