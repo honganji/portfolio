@@ -92,7 +92,7 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
                       ),
                       SizedBox(
                         width: width * 0.3,
-                        height: height * 0.1,
+                        height: height * 0.06,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,
