@@ -25,7 +25,12 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
           BoxShadow(
             color: Color.fromARGB(255, 125, 61, 0),
             offset: Offset(5.0, 5.0),
-            blurRadius: 4.0,
+            blurRadius: 6.0,
+          ),
+          BoxShadow(
+            color: Color.fromARGB(255, 125, 61, 0),
+            offset: Offset(-5.0, -5.0),
+            blurRadius: 6.0,
           ),
         ],
       ),
