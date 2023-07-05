@@ -95,14 +95,15 @@ class _DesktopWebAppBoxState extends State<DesktopWebAppBox> {
                         height: 50,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(25),
-                              ),
-                              side: const BorderSide(
-                                  width: 1, // the thickness
-                                  color: Colors.black // the color of the border
-                                  )),
+                            backgroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            side: const BorderSide(
+                              width: 1,
+                              color: Colors.black,
+                            ),
+                          ),
                           child: const Text(
                             "github repository ->",
                             style: TextStyle(

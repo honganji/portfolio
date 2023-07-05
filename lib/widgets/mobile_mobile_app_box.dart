@@ -109,14 +109,15 @@ class _DesktopMobileAppBoxState extends State<MobileMobileAppBox> {
                         height: height * 0.04,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(25),
-                              ),
-                              side: const BorderSide(
-                                  width: 1, // the thickness
-                                  color: Colors.black // the color of the border
-                                  )),
+                            backgroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            side: const BorderSide(
+                              width: 1,
+                              color: Colors.black,
+                            ),
+                          ),
                           child: const Text(
                             "github repo ->",
                             style: TextStyle(

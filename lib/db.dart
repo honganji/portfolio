@@ -5,10 +5,6 @@ class PageScrollModel extends ChangeNotifier {
 
   num get offset => _offset;
 
-  // set setoffset(offset controller) {
-  //   _offset = controller;
-  // }
-
   void changeScrollControler(num offset) {
     _offset = offset;
     notifyListeners();

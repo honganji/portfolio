@@ -73,8 +73,8 @@ class _DesktopMobileAppBoxState extends State<DesktopMobileAppBox> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        '${widget.project.projectName}',
-                        style: TextStyle(
+                        widget.project.projectName,
+                        style: const TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.w500,
                         ),
@@ -100,9 +100,7 @@ class _DesktopMobileAppBoxState extends State<DesktopMobileAppBox> {
                                 borderRadius: BorderRadius.circular(25),
                               ),
                               side: const BorderSide(
-                                  width: 1, // the thickness
-                                  color: Colors.black // the color of the border
-                                  )),
+                                  width: 1, color: Colors.black)),
                           child: const Text(
                             "github repository ->",
                             style: TextStyle(
