@@ -34,26 +34,22 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: const Color.fromARGB(255, 240, 240, 240),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
-              color: isHover
-                  ? const Color.fromARGB(255, 125, 61, 0)
-                  : Colors.black,
-              offset: isHover ? const Offset(5.0, 5.0) : const Offset(0, 0),
+              color: Color.fromARGB(255, 125, 61, 0),
+              offset: Offset(5.0, 5.0),
               blurRadius: 4.0,
             ),
           ],
         ),
         child: Container(
-          margin: EdgeInsets.symmetric(vertical: height * 0.03),
+          margin: EdgeInsets.symmetric(vertical: height * 0.02),
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(
-                  left: width * 0.01,
-                  top: width * 0.005,
-                  bottom: width * 0.005,
-                  right: width * 0.01,
+                margin: EdgeInsets.symmetric(
+                  horizontal: width * 0.01,
+                  vertical: width * 0.005,
                 ),
                 child: Image.asset(
                   widget.project.imagePath,
@@ -65,7 +61,6 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
               Expanded(
                 child: Container(
                   margin: EdgeInsets.symmetric(
-                    vertical: height * 0.03,
                     horizontal: width * 0.02,
                   ),
                   child: Column(
@@ -80,7 +75,16 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
                         ),
                       ),
                       SizedBox(height: height * 0.008),
-                      Text(widget.project.description),
+                      SizedBox(
+                        height: height * 0.03,
+                        width: width * 0.6,
+                        child: Text(
+                          widget.project.description,
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 2,
+                          softWrap: true,
+                        ),
+                      ),
                       SizedBox(height: height * 0.008),
                       const Divider(
                         color: Colors.black,
@@ -92,7 +96,7 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
                       ),
                       SizedBox(
                         width: width * 0.3,
-                        height: height * 0.06,
+                        height: height * 0.04,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,

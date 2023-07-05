@@ -83,7 +83,16 @@ class _DesktopMobileAppBoxState extends State<MobileMobileAppBox> {
                             ),
                           ),
                           SizedBox(height: height * 0.008),
-                          Text(widget.project.description),
+                          SizedBox(
+                            height: height * 0.07,
+                            width: width * 0.4,
+                            child: Text(
+                              widget.project.description,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 4,
+                              softWrap: true,
+                            ),
+                          ),
                           SizedBox(height: height * 0.008),
                           const Divider(
                             color: Colors.black,
@@ -97,7 +106,7 @@ class _DesktopMobileAppBoxState extends State<MobileMobileAppBox> {
                       ),
                       SizedBox(
                         width: width * 0.3,
-                        height: height * 0.06,
+                        height: height * 0.04,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,
