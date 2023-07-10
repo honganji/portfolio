@@ -30,16 +30,16 @@ class MobileAbout extends StatelessWidget {
                     "About Me",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 17,
+                      fontSize: 25,
                       decoration: TextDecoration.underline,
                     ),
                   ),
                   SizedBox(
-                    height: height * 0.05,
+                    height: height * 0.03,
                   ),
                   RichText(
                     text: TextSpan(
-                      style: const TextStyle(fontSize: 10, color: Colors.white),
+                      style: const TextStyle(fontSize: 13, color: Colors.white),
                       children: [
                         const TextSpan(
                           text:
@@ -52,7 +52,7 @@ class MobileAbout extends StatelessWidget {
                         TextSpan(
                           text: "“Flutter” and “Firebase”.\n\n",
                           style: TextStyle(
-                            fontSize: 13,
+                            fontSize: 15,
                             color: Colors.amber[400],
                           ),
                         ),
@@ -62,7 +62,7 @@ class MobileAbout extends StatelessWidget {
                         TextSpan(
                           text: "blockchain development ",
                           style: TextStyle(
-                            fontSize: 13,
+                            fontSize: 15,
                             color: Colors.amber[400],
                           ),
                         ),
@@ -80,7 +80,7 @@ class MobileAbout extends StatelessWidget {
                         TextSpan(
                           text: "Solidity, Javascript, Dart & Rust. ",
                           style: TextStyle(
-                            fontSize: 13,
+                            fontSize: 15,
                             color: Colors.amber[400],
                           ),
                         ),
@@ -99,8 +99,7 @@ class MobileAbout extends StatelessWidget {
                 decoration: const BoxDecoration(color: Colors.black),
                 child: Image.asset(
                   "assets/img/profile.jpeg",
-                  height: 100,
-                  width: 100,
+                  width: width * 0.6,
                 ),
               ),
             ),

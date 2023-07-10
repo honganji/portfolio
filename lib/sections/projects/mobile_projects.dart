@@ -11,7 +11,6 @@ class MobileProjects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.black,
       body: Container(
@@ -32,7 +31,7 @@ class MobileProjects extends StatelessWidget {
                 child: AnimationLimiter(
                   child: GridView.count(
                     shrinkWrap: true,
-                    physics: ScrollPhysics(),
+                    physics: const ScrollPhysics(),
                     crossAxisCount: 1,
                     crossAxisSpacing: 10,
                     children: List.generate(4, (index) {
@@ -63,14 +62,14 @@ class MobileProjects extends StatelessWidget {
                         await launchUrl(Uri.parse(
                             "https://github.com/honganji?tab=repositories"));
                       },
-                      iconSize: 20,
+                      iconSize: 15,
                       icon: Image.asset(
                         "assets/img/github_icon.png",
                         color: Colors.white,
                       ),
                     ),
                     SizedBox(
-                      width: width * 0.01,
+                      width: width * 0.005,
                     ),
                     IconButton(
                       onPressed: () async {
@@ -79,14 +78,14 @@ class MobileProjects extends StatelessWidget {
                               "https://www.linkedin.com/in/yuji-toshihiro-526244269/"),
                         );
                       },
-                      iconSize: 20,
+                      iconSize: 15,
                       icon: Image.asset(
                         "assets/img/linkedin_icon.png",
                         color: Colors.white,
                       ),
                     ),
                     SizedBox(
-                      width: width * 0.01,
+                      width: width * 0.005,
                     ),
                     IconButton(
                       onPressed: () async {
@@ -94,7 +93,7 @@ class MobileProjects extends StatelessWidget {
                           Uri.parse("https://twitter.com/Tonny5693"),
                         );
                       },
-                      iconSize: 20,
+                      iconSize: 15,
                       icon: Image.asset(
                         "assets/img/twitter_icon.png",
                         color: Colors.white,
@@ -104,10 +103,10 @@ class MobileProjects extends StatelessWidget {
                 ),
                 const Spacer(),
                 SizedBox(
-                  width: width * 0.5,
+                  width: width * 0.4,
                   child: const Text(
                     "Designed in Figma and coded in Visual Studio Code. Built with Flutter, deployed with Firebase.",
-                    style: TextStyle(color: Colors.white, fontSize: 10),
+                    style: TextStyle(color: Colors.white, fontSize: 9),
                   ),
                 )
               ],
