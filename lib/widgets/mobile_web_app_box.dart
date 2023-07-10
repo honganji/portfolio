@@ -68,7 +68,7 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
                     ),
                     SizedBox(height: height * 0.008),
                     SizedBox(
-                      height: height * 0.03,
+                      height: height * 0.05,
                       width: width * 0.6,
                       child: Text(
                         widget.project.description,
@@ -77,7 +77,6 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
                         softWrap: true,
                       ),
                     ),
-                    SizedBox(height: height * 0.008),
                     const Divider(
                       color: Colors.black,
                       height: 1,
@@ -87,7 +86,6 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
                       height: height * 0.01,
                     ),
                     SizedBox(
-                      width: width * 0.3,
                       height: height * 0.04,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(

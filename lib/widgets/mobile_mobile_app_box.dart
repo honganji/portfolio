@@ -74,12 +74,12 @@ class _DesktopMobileAppBoxState extends State<MobileMobileAppBox> {
                         ),
                         SizedBox(height: height * 0.008),
                         SizedBox(
-                          height: height * 0.07,
+                          // height: height * 0.07,
                           width: width * 0.4,
                           child: Text(
                             widget.project.description,
                             overflow: TextOverflow.ellipsis,
-                            maxLines: 4,
+                            maxLines: 5,
                             softWrap: true,
                           ),
                         ),
@@ -95,7 +95,6 @@ class _DesktopMobileAppBoxState extends State<MobileMobileAppBox> {
                       ],
                     ),
                     SizedBox(
-                      width: width * 0.3,
                       height: height * 0.04,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
