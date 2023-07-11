@@ -77,6 +77,9 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
                         softWrap: true,
                       ),
                     ),
+                    SizedBox(
+                      height: height * 0.01,
+                    ),
                     const Divider(
                       color: Colors.black,
                       height: 1,
@@ -98,7 +101,7 @@ class _MobileWebAppBoxState extends State<MobileWebAppBox> {
                                 color: Colors.black // the color of the border
                                 )),
                         child: const Text(
-                          "github repo ->",
+                          "github repo",
                           style: TextStyle(
                             color: Colors.black,
                           ),

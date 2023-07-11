@@ -94,30 +94,27 @@ class _DesktopMobileAppBoxState extends State<MobileMobileAppBox> {
                         ),
                       ],
                     ),
-                    SizedBox(
-                      height: height * 0.04,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          side: const BorderSide(
-                            width: 1,
-                            color: Colors.black,
-                          ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
                         ),
-                        child: const Text(
-                          "github repo ->",
-                          style: TextStyle(
-                            color: Colors.black,
-                          ),
+                        side: const BorderSide(
+                          width: 1,
+                          color: Colors.black,
                         ),
-                        onPressed: () async {
-                          await launchUrl(
-                              Uri.parse(widget.project.repositoryPath));
-                        },
                       ),
+                      child: const Text(
+                        "github repo",
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                      onPressed: () async {
+                        await launchUrl(
+                            Uri.parse(widget.project.repositoryPath));
+                      },
                     ),
                   ],
                 ),
