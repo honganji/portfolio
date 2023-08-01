@@ -12,7 +12,6 @@ final GoRouter router = GoRouter(routes: [
     path: "/:path",
 		name: "news",
     builder: (context, state) => DeepLink(
-      userId: state.pathParameters["id"].toString(),
       path: state.pathParameters["path"].toString(),
     ),
   )

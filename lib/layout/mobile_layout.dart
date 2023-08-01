@@ -48,7 +48,6 @@ class MobileLayout extends StatelessWidget {
               pageNum: 3,
             ),
 						ElevatedButton(onPressed: (){context.pushNamed("news", pathParameters: {
-                  "id": "yujitoshi.com",
                   "path": "deeplink"
                 });}, child: const Text("Deep Link Page"),),
           ],
