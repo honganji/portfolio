@@ -1,12 +1,11 @@
 import 'package:go_router/go_router.dart';
 import 'package:portfolio/screens/deeplink.dart';
-
-import 'layout/mobile_layout.dart';
+import 'package:portfolio/wrapper.dart';
 
 final GoRouter router = GoRouter(routes: [
   GoRoute(
     path: "/",
-    builder: (context, state) => const MobileLayout(),
+    builder: (context, state) => const Wrapper(),
   ),
   GoRoute(
     path: "/:path",
