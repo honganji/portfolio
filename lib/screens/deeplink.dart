@@ -13,9 +13,8 @@ class DeepLink extends StatelessWidget {
         title: const Text("deeplink page"),
       ),
       body: Center(child: Column(
-        children: [
-          const Text("You reached to deeplink page!"),
-          Text("Deeplink URL: \nhttps://yujitoshi.com/$path/")
+        children: const [
+          Text("You reached to deeplink page!"),
         ],
       )),
     );
