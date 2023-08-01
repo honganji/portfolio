@@ -9,7 +9,7 @@ final GoRouter router = GoRouter(routes: [
     builder: (context, state) => const MobileLayout(),
   ),
   GoRoute(
-    path: "/:id/:path",
+    path: "/:path",
 		name: "news",
     builder: (context, state) => DeepLink(
       userId: state.pathParameters["id"].toString(),
