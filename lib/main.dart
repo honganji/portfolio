@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/router.dart';
 import 'package:portfolio/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -16,13 +17,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Yuji Toshihiro',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Wrapper(),
+			routerConfig: router,
+      // home: const Wrapper(),
     );
   }
 }

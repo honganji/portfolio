@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:portfolio/sections/about/mobile_about.dart';
 import 'package:portfolio/sections/experience/mobile_experience.dart';
 import 'package:portfolio/sections/home/mobile_home.dart';
@@ -46,6 +47,10 @@ class MobileLayout extends StatelessWidget {
               icon: Icons.build,
               pageNum: 3,
             ),
+						ElevatedButton(onPressed: (){context.pushNamed("news", pathParameters: {
+                  "id": "yujitoshi.com",
+                  "path": "deeplink"
+                });}, child: const Text("Deep Link Page"),),
           ],
         ),
       ),
