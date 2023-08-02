@@ -47,5 +47,22 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>FlutterDeepLinkingEnabled</key>
+	<true/>
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+    <key>CFBundleTypeRole</key>
+    <string>Editor</string>
+    <key>CFBundleURLName</key>
+    <string>yujitoshi.com</string>
+    <key>CFBundleURLSchemes</key>
+    <array>
+    <string>customscheme</string>
+    </array>
+    </dict>
+  </array>
 </dict>
 </plist>
