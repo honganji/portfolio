@@ -39,7 +39,7 @@ class MobileAbout extends StatelessWidget {
                   ),
                   RichText(
                     text: TextSpan(
-                      style: const TextStyle(fontSize: 13, color: Colors.white),
+                      style: const TextStyle(fontSize: 12, color: Colors.white),
                       children: [
                         const TextSpan(
                           text:
@@ -99,7 +99,7 @@ class MobileAbout extends StatelessWidget {
                 decoration: const BoxDecoration(color: Colors.black),
                 child: Image.asset(
                   "assets/img/profile.jpeg",
-                  width: width * 0.6,
+                  width: width * 0.5,
                 ),
               ),
             ),
