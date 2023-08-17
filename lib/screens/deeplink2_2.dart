@@ -8,7 +8,7 @@ class DeepLink2_2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("You reached to deeplink page 2-1!")),
+      appBar: AppBar(title: Text("You reached to deeplink page 2-2!")),
     );
   }
 }
