@@ -63,8 +63,10 @@ class _DesktopHomeState extends State<DesktopHome> {
                       children: [
                         IconButton(
                           onPressed: () async {
-                            await launchUrl(Uri.parse(
-                                "https://github.com/honganji?tab=repositories"));
+                            await launchUrl(
+                              Uri.parse(
+                                  "https://github.com/honganji?tab=repositories"),
+                            );
                           },
                           iconSize: 40,
                           icon: Image.asset(

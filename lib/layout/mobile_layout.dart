@@ -12,10 +12,10 @@ class MobileLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> widgetList = [
-      const SafeArea(child: MobileHome()),
-      const SafeArea(child: MobileAbout()),
-      const SafeArea(child: MobileExperience()),
-      const SafeArea(child: MobileProjects()),
+      const MobileHome(),
+      const MobileAbout(),
+      const MobileExperience(),
+      const MobileProjects(),
     ];
     PageController controller = PageController();
     return Scaffold(
@@ -76,7 +76,7 @@ class MobileLayout extends StatelessWidget {
                 ),
                 const Text(
                   "Yuji Toshihiro",
-                  style: TextStyle(fontSize: 20, fontFamily: "Vollkorn"),
+                  style: TextStyle(fontSize: 30, fontFamily: "Vollkorn"),
                 ),
               ],
             ),
