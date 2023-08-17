@@ -23,7 +23,7 @@ class MobileProjects extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white,
                 decoration: TextDecoration.underline,
-                fontSize: 17,
+                fontSize: 25,
               ),
             ),
             Expanded(
