@@ -4,7 +4,7 @@
       "details": [
       {
         "appID": "R52JSP5952.com.example.portfolio",
-        "paths": ["/deeplink2/*/"]
+        "paths": ["/deeplink2/*"]
       }
     ]
   }

@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-class DeepLink2_2 extends StatelessWidget {
-  const DeepLink2_2({super.key});
+class DeepLinkPageTwo extends StatelessWidget {
+  const DeepLinkPageTwo({this.name, super.key});
+  final name;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("You reached to deeplink page 2-2!")),
+      appBar: AppBar(title: const Text("Universal Link2")),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text("URLクエリパラメータを使用したページ遷移"),
+            Text(name),
+          ],
+        )
+      ),
     );
   }
 }
