@@ -20,12 +20,12 @@ final GoRouter router = GoRouter(
         ),
       ),
       GoRoute(
-        path: "/deeplink2/1",
-        builder: (context, state) => const DeepLink2_1(),
+        path: "/deeplink2/page1",
+        builder: (context, state) => const DeepLinkPageOne(),
       ),
       GoRoute(
-        path: "/deeplink2/2",
-        builder: (context, state) => const DeepLink2_2(),
+        path: "/deeplink2/page2",
+        builder: (context, state) => DeepLinkPageTwo(name: state.uri.queryParameters["name"]),
       )
   ]
 );
