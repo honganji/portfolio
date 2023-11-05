@@ -50,7 +50,7 @@ class _MobileHome2State extends State<MobileHome> {
                   height: 5,
                 ),
                 Text(
-                  "Flutter Dev",
+                  "Full-Stack Dev",
                   style: TextStyle(color: Colors.yellow[400], fontSize: 20),
                 ),
                 const SizedBox(
