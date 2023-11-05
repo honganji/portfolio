@@ -22,7 +22,7 @@ class _DesktopSkillBoxState extends State<MobileSkillBox> {
       child: Column(
         children: [
           SizedBox(
-            height: width * 0.007,
+            height: width * 0.002,
           ),
           Text(
             '${widget.skill.framworkName}\n(${widget.skill.languageName})',
