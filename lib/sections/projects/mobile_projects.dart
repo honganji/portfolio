@@ -42,9 +42,10 @@ class MobileProjects extends StatelessWidget {
                         child: ScaleAnimation(
                           duration: const Duration(milliseconds: 1000),
                           child: FadeInAnimation(
-                              child: (index < 2)
-                                  ? MobileMobileAppBox(project)
-                                  : MobileWebAppBox(project)),
+                            child: (index < 3)
+                                ? MobileWebAppBox(project)
+                                : MobileMobileAppBox(project),
+                          ),
                         ),
                       );
                     }),
