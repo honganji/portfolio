@@ -43,16 +43,16 @@ class MobileAbout extends StatelessWidget {
                       children: [
                         const TextSpan(
                           text:
-                              "Yuji Toshihiro. Frontend and blockchain developer from Japan.\n\n",
+                              "Yuji Toshihiro. Full-Stack developer from Japan.\n",
                         ),
                         const TextSpan(
                           text:
-                              "In 1321 I started working on mobile application development using ",
+                              "In 2021 I started working on frontend application development using ",
                         ),
                         TextSpan(
-                          text: "“Flutter” and “Firebase”.\n\n",
+                          text: "“JavaScript”.\n",
                           style: TextStyle(
-                            fontSize: 15,
+                            fontSize: 20,
                             color: Colors.amber[400],
                           ),
                         ),
@@ -62,13 +62,13 @@ class MobileAbout extends StatelessWidget {
                         TextSpan(
                           text: "blockchain development ",
                           style: TextStyle(
-                            fontSize: 15,
+                            fontSize: 20,
                             color: Colors.amber[400],
                           ),
                         ),
                         const TextSpan(
                           text:
-                              "and in 1322 I joined “shiftbase”. I’ve created a couple of web and mobile application projects from scratch: “Malpay”, “Astar SNS”, “Election dApp”.\n\n",
+                              "and in 2022 I joined “shiftbase”. I’ve created a couple of web and mobile application projects from scratch: “Malpay”, “Astar SNS”, “Election dApp”.\n\n",
                         ),
                         const TextSpan(
                           text:
@@ -78,15 +78,30 @@ class MobileAbout extends StatelessWidget {
                           text: "In my work I use ",
                         ),
                         TextSpan(
-                          text: "Solidity, Javascript, Dart & Rust. ",
+                          text: "Javascript, Solidity, and Dart. ",
                           style: TextStyle(
-                            fontSize: 15,
+                            fontSize: 20,
                             color: Colors.amber[400],
                           ),
                         ),
                         const TextSpan(
                           text:
-                              "Moreover, I write instructions on how to develop blockchain applications from scratch for other engineers’ use.\n\n",
+                              "Moreover, I wrote instructions on how to develop blockchain applications from scratch for other engineers’ use.\n\n",
+                        ),
+                        const TextSpan(
+                          text:
+                              "At the most recent work, I worked on mobile application. At the time, I needed to use API made with Ruby and Rails. This experience got me interested in Backend tech. Since then, I started learning ",
+                        ),
+                        TextSpan(
+                          text: "\"SQL\" and \"Spring Boot(Java)\". ",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.amber[400],
+                          ),
+                        ),
+                        const TextSpan(
+                          text:
+                              "Now I'm working on Full-Stack development.\n\n",
                         ),
                       ],
                     ),

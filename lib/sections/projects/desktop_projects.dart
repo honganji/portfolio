@@ -39,9 +39,9 @@ class DesktopProjects extends StatelessWidget {
                   mainAxisSpacing: height * 0.05,
                   children: List.generate(4, (index) {
                     final project = constants.projectList[index];
-                    return (index < 2)
-                        ? DesktopMobileAppBox(project)
-                        : DesktopWebAppBox(project);
+                    return (index < 3)
+                        ? DesktopWebAppBox(project)
+                        : DesktopMobileAppBox(project);
                   }),
                 ),
               ),

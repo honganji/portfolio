@@ -53,7 +53,7 @@ class _DesktopHomeState extends State<DesktopHome> {
                       height: 10,
                     ),
                     Text(
-                      "Flutter Dev",
+                      "Full-Stack Dev",
                       style: TextStyle(color: Colors.amber[400], fontSize: 28),
                     ),
                     const SizedBox(

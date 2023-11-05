@@ -33,12 +33,12 @@ class DesktopExperience extends StatelessWidget {
                     SizedBox(
                       width: width * 0.12,
                       child: const Text(
-                        "2022 - PRESENT",
+                        "2022/5 - 2023/6",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ),
                     Text(
-                      "BlockChain Engineer",
+                      "BlockChain and Frontend Engineer(shiftbase)",
                       style: TextStyle(color: Colors.amber[400], fontSize: 27),
                     ),
                   ],
@@ -50,7 +50,40 @@ class DesktopExperience extends StatelessWidget {
                     SizedBox(
                       width: width * 0.45,
                       child: const Text(
-                        "I develop applications with smart contract using Solidity, Javascript, Dart, Rust and make texts how to make these applications. Also I maintain theseapplication and text.",
+                        "I develop applications with smart contract using Solidity, Javascript, Dart, Rust and make texts how to make these applications. Also I maintain these application and text.",
+                        style: TextStyle(color: Colors.white, fontSize: 17),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    SizedBox(
+                      width: width * 0.12,
+                      child: const Text(
+                        "2023/7 - 2023/10",
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ),
+                    Text(
+                      "Mobile Engineer(Jinjibu.inc., freelance)",
+                      style: TextStyle(color: Colors.amber[400], fontSize: 27),
+                    ),
+                  ],
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    SizedBox(width: width * 0.12),
+                    SizedBox(
+                      width: width * 0.45,
+                      child: const Text(
+                        "I worked on mobile app development with API. I implemented QR code reader function, Deep Link, and so on.",
                         style: TextStyle(color: Colors.white, fontSize: 17),
                       ),
                     ),
